@@ -1,4 +1,4 @@
-package com.epam.decoration.model.enums;
+package com.epam.decoration.model.entity.enums;
 
 public enum DecorateOrigin {
     SYNTHETIC("synthetic"), NATURAL("natural");

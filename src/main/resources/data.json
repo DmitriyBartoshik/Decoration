@@ -1,0 +1,27 @@
+[
+  {
+    "class": "Stone",
+    "weight":"5",
+    "cost":"34",
+    "transparency":"64",
+    "decorate_origin":"natural",
+    "stoneType": "emerald"
+  },
+  {
+    "class": "Pearls",
+    "weight":"4",
+    "cost":"17",
+    "transparency":"26",
+    "decorate_origin":"synthetic",
+    "stoneType": "baroque"
+  },
+
+  {
+    "class": "Amber",
+    "weight":"8",
+    "cost":"87",
+    "transparency":"95",
+    "decorate_origin":"natural",
+    "stoneType": "bakerite"
+  }
+]

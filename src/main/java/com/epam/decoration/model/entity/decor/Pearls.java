@@ -1,6 +1,6 @@
-package com.epam.decoration.model.decor;
+package com.epam.decoration.model.entity.decor;
 
-import com.epam.decoration.model.enums.PearlsType;
+import com.epam.decoration.model.entity.enums.PearlsType;
 
 public class Pearls extends Decor {
     private final PearlsType pearlsType;

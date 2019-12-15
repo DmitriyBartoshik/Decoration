@@ -1,6 +1,6 @@
-package com.epam.decoration.model.decor;
+package com.epam.decoration.model.entity.decor;
 
-import com.epam.decoration.model.enums.StoneType;
+import com.epam.decoration.model.entity.enums.StoneType;
 
 public class Stone extends Decor {
     private final StoneType stoneType;
