@@ -32,7 +32,7 @@ public class View {
         printDecors(decors);
     }
 
-    public void findStoneByTransparency(double min, double max) {
+    public void findStoneByTransparency(int min, int max) {
         List<Decor> stones = controller.findStoneByTransparency(min, max);
         printDecors(stones);
     }

@@ -7,6 +7,22 @@
     "decorate_origin":"natural",
     "stoneType": "emerald"
   },
+   {
+      "class": "Stone",
+      "weight":"3",
+      "cost":"45",
+      "transparency":"74",
+      "decorate_origin":"synthetic",
+      "stoneType": "diamond"
+    },
+     {
+        "class": "Stone",
+        "weight":"72",
+        "cost":"54",
+        "transparency":"54",
+        "decorate_origin":"natural",
+        "stoneType": "ruby"
+      },
   {
     "class": "Pearls",
     "weight":"4",
@@ -15,6 +31,22 @@
     "decorate_origin":"synthetic",
     "stoneType": "baroque"
   },
+   {
+      "class": "Pearls",
+      "weight":"23",
+      "cost":"430",
+      "transparency":"27",
+      "decorate_origin":"natural",
+      "stoneType": "blister"
+    },
+     {
+        "class": "Pearls",
+        "weight":"42",
+        "cost":"161",
+        "transparency":"89",
+        "decorate_origin":"synthetic",
+        "stoneType": "souffle"
+      },
 
   {
     "class": "Amber",
@@ -23,5 +55,21 @@
     "transparency":"95",
     "decorate_origin":"natural",
     "stoneType": "bakerite"
-  }
+  },
+   {
+      "class": "Amber",
+      "weight":"7",
+      "cost":"56",
+      "transparency":"76",
+      "decorate_origin":"natural",
+      "stoneType": "hessite"
+    },
+     {
+        "class": "Amber",
+        "weight":"4",
+        "cost":"48",
+        "transparency":"71",
+        "decorate_origin":"natural",
+        "stoneType": "hedanite"
+      }
 ]

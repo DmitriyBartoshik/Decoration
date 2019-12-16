@@ -7,9 +7,13 @@ import com.epam.decoration.model.service.gson.DecorJsonService;
 import java.util.List;
 
 public class Necklace {
-    private  List<Decor> decors;
+    private List<Decor> decors;
 
     public Necklace() {
+    }
+
+    public Necklace(List<Decor> decors) {
+        this.decors = decors;
     }
 
     public List<Decor> getDecors() {

@@ -1,5 +1,6 @@
 package com.epam.decoration.controller;
 
+import com.epam.decoration.model.db.Necklace;
 import com.epam.decoration.model.entity.decor.Decor;
 import com.epam.decoration.model.entity.decor.Stone;
 
@@ -8,41 +9,41 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Controller {
-    private List<Decor> decors;
+    private Necklace necklace;
 
-    public Controller(List<Decor> decors) {
-        this.decors = decors;
+    public Controller(Necklace necklace) {
+        this.necklace = necklace;
     }
 
-    public void print() {
-        System.out.println(decors.size());
+    public Necklace getNecklace() {
+        return necklace;
     }
 
-    public double weightCalculate() {
-        return decors
+    public int weightCalculate() {
+        return necklace.getDecors()
                 .stream()
-                .mapToDouble(Decor::getWeight).sum();
+                .mapToInt(Decor::getWeight).sum();
     }
 
-    public double costCalculate() {
-        return decors
+    public int costCalculate() {
+        return necklace.getDecors()
                 .stream()
-                .mapToDouble(Decor::getCost).sum();
+                .mapToInt(Decor::getCost).sum();
     }
 
     public List<Decor> sortedDecorByTransparency() {
-        decors.sort(Comparator.comparing(Decor::getTransparency));
-        return decors;
+        necklace.getDecors().sort(Comparator.comparing(Decor::getTransparency));
+        return necklace.getDecors();
     }
 
     public List<Decor> sortedDecorByCostByTransparency() {
-        decors.sort(Comparator.comparing(Decor::getCost)
+        necklace.getDecors().sort(Comparator.comparing(Decor::getCost)
                 .thenComparing(Decor::getTransparency));
-        return decors;
+        return necklace.getDecors();
     }
 
-    public List<Decor> findStoneByTransparency(double min, double max) {
-        return decors.stream()
+    public List<Decor> findStoneByTransparency(int min, int max) {
+        return necklace.getDecors().stream()
                 .filter(decor -> decor instanceof Stone)
                 .filter(decor -> decor.getTransparency() >= min && decor.getTransparency() <= max)
                 .collect(Collectors.toList());
