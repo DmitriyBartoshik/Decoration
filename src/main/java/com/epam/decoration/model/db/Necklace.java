@@ -2,33 +2,28 @@ package com.epam.decoration.model.db;
 
 import com.epam.decoration.model.entity.decor.Decor;
 import com.epam.decoration.model.service.gson.DecorJsonService;
-import com.google.gson.TypeAdapterFactory;
 
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.net.URL;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.List;
 
 public class Necklace {
-    private static List<Decor> decors;
-    private Necklace() {
+    private  List<Decor> decors;
+
+    public Necklace() {
     }
 
-    public static List<Decor> getDecors() {
+    public List<Decor> getDecors() {
         if (decors == null) {
-            decors = DecorJsonService.fromJson("data.json");
+            decors = DecorJsonService.fromJson("data.txt");
         }
         return decors;
     }
-//    public void readDataFromFile() throws IOException, ParseException {
-//            File file = getFileFromResources("data.json");
+
+    public void loadDecorsFromFile(String file) {
+        decors = DecorJsonService.fromJson(file);
+    }
+    //    public void readDataFromFile() throws IOException, ParseException {
+//            File file = getFileFromResources("data.txt");
 
 //        JSONParser parser = new JSONParser();
 //        JSONArray jsonArray = (JSONArray) parser.parse(new FileReader(file));
