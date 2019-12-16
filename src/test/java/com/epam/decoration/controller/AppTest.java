@@ -3,11 +3,9 @@ package com.epam.decoration.controller;
 import com.epam.decoration.App;
 import org.junit.Test;
 
-import java.io.IOException;
-
 public class AppTest {
     @Test
-    public void test() throws IOException {
+    public void test() throws Exception {
         String[] args = {};
         App.main(args);
     }

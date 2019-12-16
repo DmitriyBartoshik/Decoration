@@ -24,7 +24,7 @@ public class ControllerTest {
     @Before
     public void setUp() throws Exception {
         List<Decor> decors = new ArrayList<>();
-        decors.add(new Stone(23, 45, 73, DecorateOrigin.NATURAL, StoneType.DIAMOND));
+        decors.add(new Stone(22, 45, 73, DecorateOrigin.NATURAL, StoneType.DIAMOND));
         decors.add(new Stone(21, 42, 65, DecorateOrigin.NATURAL, StoneType.EMERALD));
         decors.add(new Stone(34, 12, 35, DecorateOrigin.SYNTHETIC, StoneType.RUBY));
 
@@ -42,7 +42,7 @@ public class ControllerTest {
 
     @Test
     public void weightCalculate() {
-        assertEquals(236, controller.weightCalculate());
+        assertEquals(235, controller.weightCalculate());
     }
 
     @Test
