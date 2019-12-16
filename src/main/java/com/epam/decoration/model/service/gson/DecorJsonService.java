@@ -6,6 +6,7 @@ import com.epam.decoration.model.entity.decor.Pearls;
 import com.epam.decoration.model.entity.decor.Stone;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
 
@@ -15,6 +16,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
 
 public class DecorJsonService {
@@ -35,10 +37,12 @@ public class DecorJsonService {
             } catch (FileNotFoundException e) {
                 System.out.println("File not found");
             } catch (IOException e) {
-                e.printStackTrace();
+                System.out.println(e.getMessage());
+            } catch (JsonSyntaxException e) {
+                System.out.println("Incorrect data");
             }
         }
-        return null;
+        return new ArrayList<>();
     }
 
     private static File getFile(String fileName) {
