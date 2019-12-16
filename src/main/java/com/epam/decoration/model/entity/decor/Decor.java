@@ -1,6 +1,5 @@
 package com.epam.decoration.model.entity.decor;
 
-
 import com.epam.decoration.model.entity.enums.DecorateOrigin;
 
 import java.util.Objects;

@@ -11,4 +11,8 @@ public class Pearls extends Decor {
         super(weight,cost,transparency,origin);
         this.pearlsType = pearlsType;
     }
+
+    public PearlsType getPearlsType() {
+        return pearlsType;
+    }
 }

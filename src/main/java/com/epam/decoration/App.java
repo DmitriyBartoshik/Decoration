@@ -5,7 +5,6 @@ import com.epam.decoration.model.db.Necklace;
 import com.epam.decoration.view.View;
 
 public class App {
-
     /**
      * Program entry point
      *

@@ -11,4 +11,8 @@ public class Amber extends Decor {
         super(weight, cost, transparency, origin);
         this.amberType = amberType;
     }
+
+    public AmberType getAmberType() {
+        return amberType;
+    }
 }

@@ -11,4 +11,8 @@ public class Stone extends Decor {
         super(weight, cost, transparency, origin);
         this.stoneType = stoneType;
     }
+
+    public StoneType getStoneType() {
+        return stoneType;
+    }
 }
